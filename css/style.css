@@ -9,6 +9,7 @@
     --border-color:#ECECEC;
     --border-pict-color:#EEEEEE;
     --border-shadow-color:#00000040;
+    --icon-color:#afb1b8;
 }
 h1,
 h2,
@@ -100,13 +101,20 @@ a.logo {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-.mail::before{
-    content: "";
-    width: 20px;
-    height: 20px;
+.icons{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
 }
-.tel
+.email{
+    fill: var(--primary-text-color);
+}
+.email:hover,.tel:hover{
+    fill: currentColor;
+}
+.tel{
+    fill: var(--primary-text-color);
+}
 /* КОНТАКТЫ */
 .contacts a:hover,
 .contacts a:focus {
@@ -183,16 +191,23 @@ a.logo {
 .benefits-list{
     display: flex;
 }
-.benefits-list-item::before{
-    content: "";
+.benefits-list-icon{
+    height: 70px;
+    width: 70px;
+
+    margin: 25px 100px;
+    
+}
+.benefits-list-item{
+    
     display: block;
     height: 120px;
     width: 270px;
-    margin-bottom: 30px;
     
+    margin-right: 30px;
+    border-radius: 4px;
     background-color: var(--button-color);
-    background-repeat: no-repeat;
-    background-position: center;
+
 
 }
 /* НЕВИДИМЫЙ ТЕКСТ */
@@ -210,6 +225,7 @@ a.logo {
 }
 .benefits-text-cont{
     margin-right: 30px;
+    margin-top: 30px;
 }
 /* НАШИ ПРЕИМУЩЕСТВА */
 .benefits-title {
@@ -219,6 +235,7 @@ a.logo {
     text-transform: uppercase;
 
     color: var(--secondary-color);
+    margin-top: 30px;
 }
 .benefits-text {
     font-weight: 400;
@@ -282,6 +299,58 @@ margin-left: 30px;
 
     margin-top: 10px;
 }
+.social{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 16px;
+}
+.social-link{
+    display:inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--icon-color);
+    margin-right: 10px;
+}
+.social-link:hover{
+    fill: var(--border-pict-color);
+    background-color: var(--hower-color);
+}
+.social-icon{
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+    
+}
+.our-clients{
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--secondary-color);
+
+    margin-bottom: 50px;
+}
+.our-clients-list{
+    display: flex;
+    justify-content: space-between;
+}
+.clients-link{
+    display: inline-block;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px ;
+    fill: var(--icon-color);
+}
+.clients-link:hover{
+    border: 1px solid var(--hower-color);
+    fill: var(--hower-color);
+}
+.social-clients-icon{
+    width: 170px;
+    height: 92px;
+}
 /* АДДРЕС ФУТЕР */
 .footer-address {
     background-color: var(--bg-color);
@@ -295,6 +364,9 @@ margin-left: 30px;
     font-size: 26px;
     line-height: 1.19;
     font-weight: 700;
+    font-style: normal;
+    display: block;
+    margin-bottom: 20px;
 }
 /* ССЫЛКА НА КАРТЫ В ФУТЕРЕ */
 .address-address{
@@ -314,6 +386,49 @@ margin-left: 30px;
 .contacts-footer {
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.join-section{
+    
+    margin-left: 70px;
+}
+.join-title{
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--primary-bg-color);
+}
+.footer-social {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 16px;
+}
+
+.footer-social-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--border-color);
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover {
+    fill: var(--border-pict-color);
+    background-color: var(--hower-color);
+}
+
+.footer-social-icon {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+
 }
 /* ПРОЭКТЫ */
 .projects{
