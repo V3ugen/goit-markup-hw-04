@@ -44,8 +44,7 @@ body {
 
 .page-header{
     border-bottom: 1px solid var(--border-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    
 }
 .conteiner {
     max-width: 1200px;
@@ -67,11 +66,16 @@ body {
 }
  /* Логотип */
 a.logo {
+    display: block;
+
     font-family: 'Raleway', sans-serif;
     color: var(--logo-color);
     font-size: 26px;
     line-height: 1.19;
-    font-weight: 700
+    font-weight: 700;
+
+    padding-bottom: 24px;
+    padding-top: 25px;
 }
 .logo-color {
     color: var(--hower-color);
@@ -98,9 +102,9 @@ a.logo {
     color: var(--secondary-color);
     font-weight: 500;
     line-height: 1.14;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .icons{
     margin-right: 10px;
@@ -123,6 +127,8 @@ a.logo {
     font-weight: 500;
     line-height: 1.14;
     color: var(--main-color);
+    display: flex;
+    align-items: center;
 }
 .contacts{
     display: flex;
@@ -145,7 +151,7 @@ a.logo {
     padding-bottom: 200px;
 
     background-color: var(--bg-color);
-    
+    background-size: cover;
     margin-right: auto;
     margin-left: auto;
     max-width: 1600px;
@@ -197,9 +203,9 @@ a.logo {
 .benefits-list-item{
     justify-content: center;
     display: flex;
-
+    height: 120px;
     width: 270px;
-    padding: 25px 0;
+    align-items: center;
     margin-right: 30px;
 
     border-radius: 4px;
@@ -270,7 +276,7 @@ margin-left: 30px;
     0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-bg-color);
-    
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 .team-item>img{
@@ -288,7 +294,7 @@ margin-left: 30px;
 
     color: var(--secondary-color);
     text-align: center;
-    padding-top: 30px;
+    
 }
 .team-text {
     font-size: 16px;
@@ -346,7 +352,7 @@ margin-left: 30px;
 .clients-link:hover{
     border: 1px solid var(--hower-color);
     fill: var(--hower-color);
-    box-shadow: 0px 4px 4px 0px #00000040;
+    /* box-shadow: 0px 4px 4px 0px #00000040; */
 }
 .social-clients-icon{
     width: 170px;
@@ -400,6 +406,7 @@ margin-left: 30px;
     margin-left: 70px;
 }
 .join-title{
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
     color: var(--primary-bg-color);
